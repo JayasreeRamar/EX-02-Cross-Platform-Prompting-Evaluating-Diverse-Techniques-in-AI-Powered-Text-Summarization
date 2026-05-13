@@ -225,46 +225,26 @@ Speed: Moderate — influenced by real-time web referencing.
 
 User Experience: Best for engagement — feels like lecture notes or guided explanation.
 
-### Perplexity:
-#### Zero-Shot Prompting
-The Strategy: Asking the AI to summarize the 500-word blockchain article with no prior examples or detailed instructions.
-Best Platform: Claude 4.6 Opus
-Performance:
-Accuracy: High; Claude stays close to the source and avoids adding extraneous claims.
-Coherence: Superior; outputs read like natural, flowing paragraphs.
-Simplicity: Good; sometimes leans toward slightly advanced vocabulary but remains clear.
-Speed: Moderate.
-User Experience: Best for quick, one-off summaries when you lack time to craft examples.
+### Claude:
+#### Zero-Shot Output
+Blockchain is a decentralized ledger that records transactions in blocks linked by cryptographic hashes, ensuring transparency, security, and data integrity.
 
-#### Few-Shot Prompting
-The Strategy: Providing the AI with 2–3 exemplar undergraduate summaries before asking it to summarize the blockchain article.
-Best Platform: GPT-5.4
-Performance:
-Accuracy: Extremely High; follows structure and factual emphasis from examples.
-Coherence: Very High; mirrors tone and organization in the exemplars.
-Simplicity: Excellent; matches the reading level demonstrated in examples.
-Speed: Fast, though prompt preparation adds small overhead.
-User Experience: Best for consistent output across many papers and scalable workflows.
+#### Few-Shot Output
 
-#### Chain-of-Thought (CoT) Prompting
-The Strategy: Instructing the AI to “think step-by-step,” listing key technical concepts (e.g., hashing, decentralization) before writing the final summary.
-Best Platform: Gemini 3.1 Pro
-Performance:
-Accuracy: The Winner; breaking down logic reduces missed nuances and factual mix-ups.
-Coherence: High; the summary follows a clear explanatory progression.
-Simplicity: Moderate; stepwise reasoning can produce slightly technical phrasing.
-Speed: Very Fast; optimized architecture handles multi-step prompts quickly.
-User Experience: Best for depth—ideal when you want students to grasp how mechanisms work, not just what they are.
+Blockchain stores transactions in connected blocks protected by hashing techniques. Consensus mechanisms validate the information, enabling applications such as cryptocurrencies, smart contracts, and supply chain tracking.
 
-#### Role-Based Prompting
-The Strategy: Assigning a persona such as “Senior Research Fellow who explains complex tech to first-year students.”
-Best Platform: Microsoft Copilot
-Performance:
-Accuracy: High; the expert persona emphasizes factual correctness and caution.
-Coherence: Good; maintains a consistent instructional voice.
-Simplicity: The Winner; persona uses plain-language analogies (e.g., blockchain = public ledger) that aid understanding.
-Speed: Moderate; may reference real-time resources, affecting latency.
-User Experience: Best for engagement—the summary reads like a mini-lecture or guided note, easy to edit into course material.
+#### Chain-of-Thought Output
+
+Step 1: Define blockchain as a distributed and decentralized ledger.
+Step 2: Explain how transactions are grouped into blocks and linked using cryptographic hashes.
+Step 3: Describe consensus mechanisms that verify and secure the data.
+Step 4: Mention practical applications such as cryptocurrencies, healthcare, and supply chain management.
+
+#### Final Summary: 
+Blockchain is a secure distributed ledger technology that records and verifies transactions across multiple systems without a central authority.
+
+#### Role-Based Output
+As a university professor explaining to undergraduate students, blockchain can be described as a decentralized digital ledger that ensures trust, transparency, and immutability by combining cryptographic hashing with distributed consensus mechanisms.
 
 ## Performance Evaluation Table:
 <img width="1691" height="930" alt="image" src="https://github.com/user-attachments/assets/8daf9df7-b112-463a-88f6-08486cc2c292" />
